@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Header } from './components';
+import { Header, Country, Main } from './components';
 
 import './styles/index.scss';
 
@@ -9,9 +9,9 @@ const App = () => {
         <>
             <Header />
             <Router>
-
                 <Switch>
-                    <Route path='/' />
+                    <Route path='/country/:country' component={Country} />
+                    <Route path='/' component={Main} />
                 </Switch>
             </Router>
         </>
