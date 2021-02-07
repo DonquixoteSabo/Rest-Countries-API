@@ -1,5 +1,21 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Header } from './components';
+
+import './styles/index.scss';
+
 const App = () => {
-    return (<h1>siema</h1>);
+    return (
+        <>
+            <Header />
+            <Router>
+
+                <Switch>
+                    <Route path='/' />
+                </Switch>
+            </Router>
+        </>
+    );
 }
 
 export default App;
