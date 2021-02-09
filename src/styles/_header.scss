@@ -1,6 +1,9 @@
 .header {
     width: 100vw;
     padding: 20px 10px;
+    background-color: white;
+    box-shadow: $box-shadow;
+    overflow: hidden;
 
     &__title {
         font-weight: 800;

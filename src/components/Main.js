@@ -32,7 +32,7 @@ const Main = () => {
                 flag: country.flag,
                 key: nanoid(8),
             }))
-            console.log(countries)
+
             setCountries(countries);
         }
         fetchCountries();
