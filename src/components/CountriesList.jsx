@@ -4,9 +4,9 @@ const CountriesList = ({ searchValue, countries }) => {
 
     return (
         <Container className='cards-wrapper'>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                 {countries.map(country => (
-                    <Grid key={country.key} item xs={12} sm={4} md={3}>
+                    <Grid key={country.key} item xs={12} sm={6} md={3}>
                         <Card className='card'>
                             <CardMedia className='card__media' src={country.flag} title='country flag' component='img' />
                             <CardContent className='card__content'>

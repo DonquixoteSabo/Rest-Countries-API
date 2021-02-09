@@ -1,13 +1,32 @@
 .card {
-    height: 400px;
 
     &__media {}
 
     &__content {}
 
     &__typography {
-        &-name {}
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        padding: 0 8px;
+
+        @media(min-width: 960px) {
+            font-size: 18px !important;
+        }
+
+        &-name {
+            font-size: 20px !important;
+            font-weight: 600 !important;
+            padding: 6px 8px !important;
+        }
 
         &-title {}
+    }
+
+    @media(min-width: 960px) {
+        min-height: 380px;
+    }
+
+    @media(min-width: 1440px) {
+        min-height: 400px;
     }
 }
