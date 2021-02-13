@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const SearchBar = ({ handleCountriesSearch, handleRegionSearch }) => {
 
-    //I had to do that because America in api has different searching value and I wantend to add unique id to each element
+    //I had to do that because America in api has different searching value and I wanted to add unique id to each element
     const continents = [
         { name: 'Africa', value: 'Africa', id: 1 },
         { name: 'America', value: 'Americas', id: 2 },
@@ -20,8 +20,8 @@ const SearchBar = ({ handleCountriesSearch, handleRegionSearch }) => {
         setContinent(event.target.value)
         setSearchValue('');
         handleRegionSearch(event.target.value)
-    }
-        ;
+    };
+
     const handleSearchInputChange = event => {
         setContinent('')
         setSearchValue(event.target.value)

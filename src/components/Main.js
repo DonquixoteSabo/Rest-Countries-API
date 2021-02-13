@@ -49,7 +49,7 @@ const Main = () => {
         try {
             const response = await axios.get('https://restcountries.eu/rest/v2/all');
             let countries = response.data;
-            //I know I can destructure country values here but In this example I think this syntax is more clear
+            
             countries = countries.map(country => ({
                 name: country.name,
                 population: country.population,
@@ -96,11 +96,13 @@ const Main = () => {
     useEffect(()=>{
         if(searchingRegion) fetchCountriesByRegion();
         else fetchAllCountries();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchingRegion]);
 
     useEffect(()=>{
         if(searchingCountries) fetchCountriesByName()
         else fetchAllCountries()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchingCountries])
 
     useEffect(() => fetchAllCountries(), [])

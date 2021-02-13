@@ -1,12 +1,12 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Typography, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import { ArrowBack } from '@material-ui/icons';
+
 const Country = () => {
 
-    function numberWithSpaces(x) {
+    const numberWithSpaces = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
@@ -31,10 +31,8 @@ const Country = () => {
             setData({
                 nativeName, borders, capital, population, region, subregion, topLevelDomain, currencies, languages, flag
             })
-
         }
         fetchData()
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
