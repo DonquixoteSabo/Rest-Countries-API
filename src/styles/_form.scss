@@ -3,6 +3,8 @@
     padding: 10px 25px !important;
     width: 80% !important;
     box-shadow: $box-shadow;
+
+
 }
 
 .wrapper {
@@ -13,12 +15,20 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+
+    @media(min-width: $large) {
+        flex-direction: row;
+    }
 }
 
 .inner-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    @media(min-width: $large) {
+        width: 50% !important;
+    }
 }
 
 .form {
@@ -35,7 +45,9 @@
         width: 100%;
     }
 
-    &__menu-item {}
+    &__menu-item {
+        margin: 10px;
+    }
 }
 
 .MuiInputLabel-formControl {
