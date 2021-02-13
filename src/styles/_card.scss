@@ -1,4 +1,7 @@
 .card {
+    &:hover {
+        box-shadow: $box-shadow;
+    }
 
     &__media {}
 
@@ -19,7 +22,6 @@
             padding: 6px 8px !important;
         }
 
-        &-title {}
     }
 
     @media(min-width: 960px) {
