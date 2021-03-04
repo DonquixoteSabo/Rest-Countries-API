@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Header, Country, Main } from './components';
-
+// 
 import './styles/index.scss';
 
 const App = () => {
-    return (
+    return (  
         <>
             <Header />
             <Router>
